@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
 import Card from '../components/Card.astro';
-import Hero from '../components/Hero.astro';
 ---
 
 <Layout title="La Velada IV">
-	<main>
-		<Hero/> <!-- TODO Create a hero with a Velada img -->
+	<main class="">
+		<img
+			src="hero-logo.svg"
+			alt="logo"
+		>
 		<ul role="list" class="link-card-grid">
 			<Card
 				title="Spurs VS Luzu"
@@ -37,20 +38,11 @@ import Hero from '../components/Hero.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 1400px;
+		width: 1200px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-	.bg-logo {
-		position: absolute;
-		top: 15%;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
 	}
 	h1 {
 		font-size: 4rem;
@@ -59,30 +51,12 @@ import Hero from '../components/Hero.astro';
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 50%;
 	}
 	.link-card-grid {
 		display: grid;
