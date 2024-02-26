@@ -1,68 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
+import Vote from '../sections/Vote.astro';
+import Hero from '../sections/Hero.astro';
 ---
 
-<Layout title="La Velada IV">
-	<main class="">
-		<img
-			src="hero-logo.svg"
-			alt="logo"
-		>
-		<ul role="list" class="link-card-grid">
-			<Card
-				title="Spurs VS Luzu"
-				url_1='spurs-bg.png'
-				url_2='luzu-bg.png'
-			/>
-			<Card
-				title="Spurs VS Luzu"
-				url_1='spurs-bg.png'
-				url_2='luzu-bg.png'
-			/>
-			<Card
-				title="Spurs VS Luzu"
-				url_1='spurs-bg.png'
-				url_2='luzu-bg.png'
-			/>
-			<Card
-				title="Spurs VS Luzu"
-				url_1='spurs-bg.png'
-				url_2='luzu-bg.png'
-			/>
-		</ul>
+<Layout title="La Velada IV - Apuestas">
+	<Hero/>
+	<main>
+		<Vote/>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 1200px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10px;
-		width: 50%;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: auto;
-		gap: 2rem;
-		padding: 0;
-		margin-bottom: 100px;
-	}
-</style>

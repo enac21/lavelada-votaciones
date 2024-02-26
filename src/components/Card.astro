@@ -8,15 +8,15 @@ interface Props {
 const { title, url_1, url_2 } = Astro.props;
 ---
 
-<section class="link-card">
-	<h2 class="col-span-full text-center py-6">
+<section class="link-card shadow-lg shadow-blue-500/50">
+	<h2 class="col-span-full text-center pt-3 pb-3 font-bold">
 		{title}
 	</h2>
 	<ul class="flex flex-auto">
-		<li class="w-full sm:w-1/2 xl:w-1/2">
+		<li class="w-full sm:w-1/2 xl:w-1/2 overflow-hidden">
 			<a href="#">
 				<img 
-					class="w-full h-full rounded transition duration-300 ease-in-out hover:bg-green-600" 
+					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-60 hover:opacity-100" 
 					src={url_1} 
 					alt="Boxeador 1"
 				>
@@ -28,10 +28,10 @@ const { title, url_1, url_2 } = Astro.props;
 					alt="vs"
 				>
 		</li>-->
-		<li class="w-full sm:w-1/2 xl:w-1/2">
+		<li class="w-full sm:w-1/2 xl:w-1/2 overflow-hidden">
 			<a href="#">
 				<img 
-					class="w-full h-full rounded transition duration-300 ease-in-out hover:bg-green-600" 
+					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-60 hover:opacity-100" 
 					src={url_2} 
 					alt="Boxeador 2"
 				>
@@ -44,8 +44,6 @@ const { title, url_1, url_2 } = Astro.props;
 		padding: 1px;
 		background-color: #23262d;
 		border-radius: 7px;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-		opacity: 0.90;
 	}
 	h2 {
 		font-size: 1.25rem;
