@@ -1,3 +1,24 @@
-<!-----
-Footer
---- -->
+---
+import ThemeToggle from "@/components/ThemeToggle.astro"
+---
+
+<footer class="mt-20 w-full border-primary border-t-2 flex flex-col md:flex-row place-items-center md:justify-between pt-6 pb-20">
+  <span class="text-primary text-center">
+    2024 Votaciones La Velada del Año <span
+      aria-hidden="true"
+      class="hidden md:inline">|</span
+    ><br aria-hidden="true" class="block md:hidden" /> 
+    Hecho por <a href="https://github.com/enac21">@enac21</a>
+  </span>
+  <span
+    aria-hidden="true"
+    class="md:hidden border-primary border-t-2 w-full mt-6 pt-6"></span>
+
+  <nav>
+    <ul class="flex flex-row gap-x-6 items-center" aria-label="redes sociales y botón para alternar tema">
+      <li>
+        <ThemeToggle />
+      </li>
+    </ul>
+  </nav>
+</footer>

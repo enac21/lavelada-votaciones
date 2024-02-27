@@ -18,34 +18,33 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="mx-auto max-w-6xl px-2 pt-5 md:pt-1 lg:px-10">
 		<slot />
 	</body>
 </html>
 
 <style is:global>
 	:root {
-		--color-primary: #ddd;
-    	--color-secondary: #333;
-    	--color-twitch: #a270ff;
+		--color-primary: #333;
+		--color-secondary: #ddd;
+		--color-twitch: #6441a4;
 
 		--background-color: var(--color-secondary);
-    	--background-image: var(--background-color) url("/concrete-dark.png") repeat;
+		--background-image: var(--background-color) url("/concrete.png") repeat;
 	}
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 1200px;
-		max-width: calc(100% - 2rem);
-		font-size: 20px;
-		line-height: 1.6;
+
+	.dark {
+		--color-primary: #ddd;
+		--color-secondary: #333;
+		--color-twitch: #a270ff;
+
+		--background-image: var(--background-color) url("/concrete-dark.png") repeat;
 	}
 	html {
 		font-family: 'Onest Variable', system-ui, sans-serif;
 		background: var(--background-image);
 		scroll-behavior: smooth;
     	overflow-x: hidden;
-		color: white;
     	overscroll-behavior: none;
 	}
 </style>

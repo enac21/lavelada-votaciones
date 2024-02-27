@@ -1,15 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 
-import Vote from '../sections/Vote.astro';
-import Hero from '../sections/Hero.astro';
+import Vote from '@/sections/Vote.astro';
+import Hero from '@/sections/Hero.astro';
+import Footer from '@/sections/Footer.astro';
+import Countdown from '@/sections/Countdown.astro';
 ---
 
 <Layout title="La Velada IV - Apuestas">
 	<!-- <Menu/> -->
 	<Hero/>
 	<main>
+		<Countdown/>
 		<Vote/>
 	</main>
-	<!-- <Footer/> -->
+	<Footer>
 </Layout>

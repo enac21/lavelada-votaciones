@@ -8,15 +8,17 @@ interface Props {
 const { title, url_1, url_2 } = Astro.props;
 ---
 
-<section class="link-card animate-fade-in animate-delay-[2s]">
-	<h2 class="col-span-full text-center pt-3 pb-3 font-bold">
-		{title}
-	</h2>
-	<ul class="flex flex-auto">
+<section class="link-card animate-fade-in animate-delay-[1s]">
+	<div class="flex justify-center">
+		<h2 class="text-center pt-3 font-bold text-primary border-b-2 border-primary">
+			{title}
+		</h2>
+	</div>
+	<ul class="flex flex-auto border-primary border-b-2">
 		<li class="w-full sm:w-1/2 xl:w-1/2 overflow-hidden">
 			<a href="#">
 				<img 
-					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-60 hover:opacity-100" 
+					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-90 hover:opacity-100" 
 					src={url_1} 
 					alt="Boxeador 1"
 				>
@@ -31,7 +33,7 @@ const { title, url_1, url_2 } = Astro.props;
 		<li class="w-full sm:w-1/2 xl:w-1/2 overflow-hidden">
 			<a href="#">
 				<img 
-					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-60 hover:opacity-100" 
+					class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-500 opacity-90 hover:opacity-100" 
 					src={url_2} 
 					alt="Boxeador 2"
 				>
@@ -41,13 +43,11 @@ const { title, url_1, url_2 } = Astro.props;
 </section>
 <style>
 	.link-card {
-		padding: 1px;
-		background-color: #23262d;
-		border-radius: 7px;
+		
 	}
 	h2 {
+		color: text-primary;
 		font-size: 1.25rem;
 		text-align: center;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 </style>
