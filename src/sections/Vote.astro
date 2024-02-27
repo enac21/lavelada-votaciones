@@ -3,7 +3,8 @@ import Card from '../components/Card.astro';
 ---
 
 <section>
-	<ul role="list" class="link-card-grid">
+	<ul class="link-card-grid">
+        <!-- Take the info from json -->
         <Card
             title="Spurs VS Luzu"
             url_1='spurs-bg.png'
@@ -26,3 +27,13 @@ import Card from '../components/Card.astro';
         />
     </ul>
 </section>
+
+<style>
+    .link-card-grid {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 2rem;
+		padding: 0;
+		margin-bottom: 100px;
+	}
+</style>

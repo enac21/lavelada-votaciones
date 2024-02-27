@@ -19,7 +19,6 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<!--<Menu/>-->
 		<slot />
 	</body>
 </html>
@@ -33,29 +32,6 @@ const { title } = Astro.props;
 		--background-color: var(--color-secondary);
     	--background-image: var(--background-color) url("/concrete-dark.png") repeat;
 	}
-	html {
-		font-family: 'Onest Variable', system-ui, sans-serif;
-		background: var(--background-image);
-		scroll-behavior: smooth;
-    	overflow-x: hidden;
-		color: white;
-    	overscroll-behavior: none;
-	}
-	svg {
-		padding-top: 50px;
-		align-items: center;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -64,25 +40,12 @@ const { title } = Astro.props;
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1.4;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10px;
-		width: 50%;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: auto;
-		gap: 2rem;
-		padding: 0;
-		margin-bottom: 100px;
+	html {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+		background: var(--background-image);
+		scroll-behavior: smooth;
+    	overflow-x: hidden;
+		color: white;
+    	overscroll-behavior: none;
 	}
 </style>
