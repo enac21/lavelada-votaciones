@@ -4,7 +4,7 @@ import { EVENT_TIMESTAMP } from "@/consts/event-date"
 ---
 
 <section class="my-5 flex flex-col place-items-center gap-y-5 border-b-2 border-primary pb-5" aria-label="cuenta atrás">
-	<p class="text-balance text-center text-lg font-medium uppercase text-primary opacity-80">
+	<p class="countdown-text text-balance text-center text-lg font-medium uppercase text-primary opacity-80">
 		El evento comienza en
 	</p>
 
@@ -78,7 +78,9 @@ import { EVENT_TIMESTAMP } from "@/consts/event-date"
 			}
 
 			if (diff < 1000) {
-				clearInterval(intervalId)
+				window.clearInterval(intervalId)
+
+				document.querySelector(".countdown-text")?.remove()
 
 				$countdown.innerHTML = "¡La velada ha comenzado!</br> 🎉🎉🎉"
 				$countdown.className = "text-primary uppercase font-semibold animate-fade-in text-3xl text-center"
@@ -91,7 +93,7 @@ import { EVENT_TIMESTAMP } from "@/consts/event-date"
 			}
 		}
 
-		setInterval(updateCountdown, SECOND)
+		intervalId = window.setInterval(updateCountdown, SECOND)
 		updateCountdown()
 	}
 
