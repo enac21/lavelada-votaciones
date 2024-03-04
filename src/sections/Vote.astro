@@ -1,31 +1,22 @@
 ---
-import Card from '../components/Card.astro';
+import Card from '@/components/Card.astro';
+
+import { getSession } from 'auth-astro/server';
+const session = await getSession(Astro.request);
 ---
 
-<section>
-	<ul class="link-card-grid">
-        <!-- Take the info from json -->
-        <Card
-            title="Spurs VS Luzu"
-            url_1='spurs-bg.png'
-            url_2='luzu-bg.png'
-        />
-        <Card
-            title="Spurs VS Luzu"
-            url_1='spurs-bg.png'
-            url_2='luzu-bg.png'
-        />
-        <Card
-            title="Spurs VS Luzu"
-            url_1='spurs-bg.png'
-            url_2='luzu-bg.png'
-        />
-        <Card
-            title="Spurs VS Luzu"
-            url_1='spurs-bg.png'
-            url_2='luzu-bg.png'
-        />
-    </ul>
+<section class="flex flex-col place-items-center lg:gap-9 my-10 text-primary">
+    { 	session && (
+        <ul class="link-card-grid">
+            <!-- Take the info from json and create the cards -->
+            <span
+                class="bg-primary px-3 py-0.5 text-base font-medium uppercase text-secondary md:px-6 md:py-1 lg:text-xl"
+                aria-hidden="true"
+            >No hay combates aun
+            </span>
+        </ul>
+        )
+    }
 </section>
 
 <style>

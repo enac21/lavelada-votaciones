@@ -1,0 +1,69 @@
+---
+import DiscordIcon from "@/icons/discord.astro"
+import LogoutIcon from "@/icons/logout.astro"
+
+import { getSession } from 'auth-astro/server';
+const session = await getSession(Astro.request);
+---
+
+<section class="my-5 flex flex-col place-items-center gap-y-5 border-b-2 border-primary text-primary animate-fade-in animate-duration-1000">
+    { 	session && (
+            <span
+                class="bg-primary px-3 py-0.5 text-base font-medium uppercase text-secondary md:px-6 md:py-1 lg:text-xl"
+                aria-hidden="true"
+            >Bienvenido {session.user?.name}
+            </span>
+            <img
+                class="w-12 h-12 rounded-full"
+                src={session.user?.image}
+                alt="user img"
+            />
+            <button title="log-out" id="logout">
+                <LogoutIcon/>    
+            </button>
+        )   
+    } 
+    {
+        !session && (
+            <button title="log-in" id="login">
+                <DiscordIcon/>
+            </button>
+        )
+    }
+</section>
+
+<script>
+    const { signIn, signOut } = await import("auth-astro/client")
+    
+    const loginButton = document.querySelector("#login")
+    const logoutButton = document.querySelector("#logout")
+
+    loginButton?.addEventListener("click", async (event) => {
+        event.preventDefault()
+        await signIn("discord")
+    })
+
+    logoutButton?.addEventListener("click", async (event) => {
+        event.preventDefault()
+        await signOut()
+    })
+  
+</script>
+
+<style>
+    button {
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        margin-bottom: 1.25rem;
+    }
+
+    button:hover {
+        --transform-scale-x: 1.25;
+        --transform-scale-y: 1.25; 
+        opacity: 0.7; 
+        --tw-scale-x: 1.25;
+        --tw-scale-y: 1.25;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+</style>

@@ -8,7 +8,7 @@ interface Props {
 const { title, url_1, url_2 } = Astro.props;
 ---
 
-<section class="link-card animate-fade-in animate-delay-[1s]">
+<section class="animate-fade-in animate-delay-[1s]">
 	<div class="flex justify-center">
 		<h2 class="text-center pt-3 font-bold text-primary border-b-2 border-primary">
 			{title}
@@ -24,6 +24,7 @@ const { title, url_1, url_2 } = Astro.props;
 				>
 			</a>
 		</li>
+		<!--TODO - UsersVote (images of the users who voted for this boxer) -->
 		<!--<li class="absolute left-1/2 xl:left-auto transform -translate-x-1/2 sm:static">
 			<img 
 					src="vs.png"
@@ -39,12 +40,10 @@ const { title, url_1, url_2 } = Astro.props;
 				>
 			</a>
 		</li>
+		<!--TODO - UsersVote (images of the users who voted for this boxer) -->
 	</ul>
 </section>
 <style>
-	.link-card {
-		
-	}
 	h2 {
 		color: text-primary;
 		font-size: 1.25rem;
