@@ -1,28 +1,13 @@
 ---
-import Card from '@/components/Card.astro';
+import { VoteSystem } from "@/components/VoteSystem.tsx"
 
 import { getSession } from 'auth-astro/server';
 const session = await getSession(Astro.request);
 ---
 
-<section class="flex flex-col place-items-center lg:gap-9 my-10 text-primary">
+<section class="flex flex-col place-items-center lg:gap-9 text-primary">
     { 	session && (
-        <ul class="link-card-grid">
-            <!-- Take the info from json and create the cards -->
-            <span
-                class="bg-primary px-3 py-0.5 text-base font-medium uppercase text-secondary md:px-6 md:py-1 lg:text-xl"
-                aria-hidden="true"
-            >No hay combates aun
-            </span>
-        </ul>
+            <VoteSystem client:visible/>
         )
     }
 </section>
-
-<style>
-    .link-card-grid {
-		display: grid;
-		grid-template-columns: auto;
-		gap: 2rem;
-	}
-</style>

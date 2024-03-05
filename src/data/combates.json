@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "combatName": "Carrera VS Agustin",
+    "boxers": [
+      {
+        "id": "1-1",
+        "boxerName": "Carrera",
+        "image": "/luzu-bg.png"
+      },
+      {
+        "id": "1-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "combatName": "Guanyar VS La Cobra",
+    "boxers": [
+      {
+        "id": "2-1",
+        "boxerName": "Guanyar",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "2-2",
+        "boxerName": "La Cobra",
+        "image": "/luzu-bg.png"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "combatName": "El Rey de la Pista",
+    "boxers": [
+      {
+        "id": "3-1",
+        "boxerName": "Carrera",
+        "image": "/luzu-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      },
+      {
+        "id": "3-2",
+        "boxerName": "Agustin",
+        "image": "/spurs-bg.png"
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@ import { getSession } from 'auth-astro/server';
 const session = await getSession(Astro.request);
 ---
 
-<section class="my-5 flex flex-col place-items-center gap-y-5 border-b-2 border-primary text-primary animate-fade-in animate-duration-1000">
+<section class="flex flex-col place-items-center gap-y-5 border-b-2 border-primary text-primary">
     { 	session && (
             <span
                 class="bg-primary px-3 py-0.5 text-base font-medium uppercase text-secondary md:px-6 md:py-1 lg:text-xl"

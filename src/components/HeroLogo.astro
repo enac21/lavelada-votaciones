@@ -21,7 +21,8 @@
 		fill-opacity: 0;
 		stroke-dasharray: 1300;
 		stroke-dashoffset: 1300;
-		animation: dash 2s ease-in forwards;
+		animation: dash 2s ease-in forwards, endDash 2s ease-in forwards;
+		stroke: #a6f017;
 	}
 
 	@keyframes dash {
@@ -33,6 +34,7 @@
 			fill-opacity: 100%;
 			stroke-dashoffset: 0;
 			stroke-width: 1;
+			stroke: transparent;
 		}
 	}
 </style>
