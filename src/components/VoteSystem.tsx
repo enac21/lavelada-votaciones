@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks"
+import { useState } from "preact/hooks"
 
 import CombatsInfo from "@/data/combates.json"
 
@@ -15,7 +15,7 @@ interface Boxer {
 }
 
 export function VoteSystem () {
-    const [combatInfo, setCombatInfo] = useState<CombatInfo[]>(CombatsInfo)
+    const [combatInfo] = useState<CombatInfo[]>(CombatsInfo)
 
     return (
         <ul class="gap-8">
