@@ -5,7 +5,7 @@ import { getSession } from 'auth-astro/server';
 const session = await getSession(Astro.request);
 ---
 
-<section class="flex flex-col place-items-center lg:gap-9 text-primary">
+<section class="flex flex-col place-items-center lg:gap-9 text-primary pt-10">
     { 	session && (
             <VoteSystem client:visible/>
         )

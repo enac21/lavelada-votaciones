@@ -14,45 +14,65 @@ interface Boxer {
     image: string,
 }
 
+type Votes = Array<Array<string>>
+
 export function VoteSystem () {
     const [combatInfo] = useState<CombatInfo[]>(CombatsInfo)
+    const [votes, setVotes] = useState<Votes>(Array.from({ length: combatInfo.length }, () => []))
+
+    const handleVote = (
+        { combatId, boxerName }:
+        { combatId: number, boxerName: string }
+    ) => {
+        const combatVote = votes[combatId]
+        
+        if (combatVote.includes(boxerName)) {
+            const newVote = combatVote.filter((vote) => vote != boxerName )
+            setVotes(prevVote => prevVote.with(combatId, newVote))
+            return
+        }
+
+        if (combatVote.length >= 1) return
+
+        const newVote = [...combatVote, boxerName]
+        setVotes(prevVotes => prevVotes.with(combatId, newVote))
+    }
 
     return (
-        <ul class="gap-8">
-            {
-                combatInfo?.map((combat) => {
-                    return (
-                        <Card children={combat}/>
-                    );
-                })
-            }
-        </ul>
-    )
-}
-
-function Card({ children }: { children: CombatInfo }) {
-    return (
-        <>
-            <section class="animate-fade-in animate-delay-[1s]">
-                <div class="flex justify-center">
-                    <h2 class="text-center pt-3 font-bold text-primary border-b-2 border-primary">
-                        {children.combatName}
-                    </h2>
-                </div>
-                <ul class="flex flex-auto border-primary border-b-2">
-                    {
-                        children?.boxers?.map((boxer, i) => {
-                            return (
-                                <li class="w-full sm:w-1/2 xl:w-1/2 overflow-hidden">
-                                    <a href="#" id={boxer.id}>
-                                        <img src={children.boxers[i].image} class="w-full h-full pt-8 rounded hover:scale-110 transition-all ease-in-out duration-400 opacity-90 hover:opacity-100"/>
-                                    </a>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </section>
-        </>
+        combatInfo?.map((combat, combatI) => {
+            return (
+                <section class="animate-fade-in animate-delay-[1s]">
+                    <div class="flex justify-center">
+                        <h2 class="text-center pt-5 font-extrabold text-primary border-b-2 border-primary">
+                            {combat.combatName}
+                        </h2>
+                    </div>
+                    <ul class="flex flex-auto border-primary border-b-2">
+                        {
+                            combat?.boxers?.map((boxer, boxerI) => {
+                                const combatVote = votes[combatI]
+                                const isVoted = combatVote?.includes(boxer.boxerName)
+                                return (
+                                    <li class={
+                                        `${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} 
+                                        w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-hidden`}>
+                                        <button 
+                                            class="w-full h-full" 
+                                            onClick={() => handleVote({ combatId: combatI, boxerName: boxer.boxerName })}>
+                                                <img 
+                                                    src={combat.boxers[boxerI].image} 
+                                                    class={`${isVoted ? 'opacity-100 scale-110' : 'opacity-70'} ${!isVoted && combatVote.length > 0 ? 'opacity-20' : 'hover:scale-110 hover:opacity-100'} transition-all ease-in-out duration-500 rounded w-full h-full pt-8`}/>
+                                        </button>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </section>
+            );
+        })
+        
+        //TODO - Vote resume with boxer img in a circle
+        //TODO - Button to send all the votes
     )
 }

@@ -6,12 +6,12 @@
       {
         "id": "1-1",
         "boxerName": "Carrera",
-        "image": "/luzu-bg.png"
+        "image": "/carrera-bg.webp"
       },
       {
         "id": "1-2",
         "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "image": "/agus-bg.webp"
       }
     ]
   },
@@ -22,53 +22,116 @@
       {
         "id": "2-1",
         "boxerName": "Guanyar",
-        "image": "/spurs-bg.png"
+        "image": "/guanyar-bg.webp"
       },
       {
         "id": "2-2",
         "boxerName": "La Cobra",
-        "image": "/luzu-bg.png"
+        "image": "/cobra-bg.webp"
       }
     ]
   },
   {
     "id": "3",
-    "combatName": "El Rey de la Pista",
+    "combatName": "Zeling y Nissaxter VS Alana y Ama Blitz",
     "boxers": [
       {
         "id": "3-1",
-        "boxerName": "Carrera",
-        "image": "/luzu-bg.png"
+        "boxerName": "Zeling y Nissaxter",
+        "image": "/nissaxter-zelin-bg.webp"
       },
       {
         "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "boxerName": "Alana y Ama Blitz",
+        "image": "/alana-ama_blitz-bg.webp"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "combatName": "Viruzz VS Shelao",
+    "boxers": [
+      {
+        "id": "4-1",
+        "boxerName": "Viruzz",
+        "image": "/viruzz-bg.webp"
       },
       {
-        "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "id": "4-2",
+        "boxerName": "Shelao",
+        "image": "/shelao-bg.webp"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "combatName": "Yo soy Plex VS El Mariana",
+    "boxers": [
+      {
+        "id": "5-1",
+        "boxerName": "Yo soy Plex",
+        "image": "/plex-bg.webp"
       },
       {
-        "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "id": "5-2",
+        "boxerName": "El Mariana",
+        "image": "/mariana-bg.webp"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "combatName": "El Rey de la Pista",
+    "boxers": [
+      {
+        "id": "6-1",
+        "boxerName": "Roberto Cein",
+        "image": ""
       },
       {
-        "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "id": "6-2",
+        "boxerName": "Aldo Geo",
+        "image": ""
       },
       {
-        "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "id": "6-3",
+        "boxerName": "Folagor",
+        "image": ""
       },
       {
-        "id": "3-2",
-        "boxerName": "Agustin",
-        "image": "/spurs-bg.png"
+        "id": "6-4",
+        "boxerName": "Karchez",
+        "image": ""
+      },
+      {
+        "id": "6-5",
+        "boxerName": "Pelicanger",
+        "image": ""
+      },
+      {
+        "id": "6-6",
+        "boxerName": "Peldaños",
+        "image": ""
+      },
+      {
+        "id": "6-7",
+        "boxerName": "Unicornio",
+        "image": ""
+      },
+      {
+        "id": "6-8",
+        "boxerName": "Skain",
+        "image": ""
+      },
+      {
+        "id": "6-9",
+        "boxerName": "Sezar Blue",
+        "image": ""
+      },
+      {
+        "id": "6-10",
+        "boxerName": "Will",
+        "image": ""
       }
     ]
   }
