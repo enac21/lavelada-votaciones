@@ -3,7 +3,8 @@ import { useState } from "preact/hooks"
 import CombatsInfo from "@/data/combates.json"
 
 interface CombatInfo {
-    id: string,
+    id: number,
+    title: string,
     combatName: string,
     boxers: Boxer[]
 }
@@ -39,28 +40,29 @@ export function VoteSystem () {
     }
 
     return (
-        combatInfo?.map((combat, combatI) => {
+        combatInfo?.map((combat) => {
             return (
                 <section class="animate-fade-in animate-delay-[1s]">
                     <div class="flex justify-center">
-                        <h2 class="text-center pt-5 font-extrabold text-primary border-b-2 border-primary">
+                        <h2 class="text-center font-medium text-primary font-atomic text-6xl uppercase border-primary mt-10">
                             {combat.combatName}
                         </h2>
                     </div>
                     <ul class="flex flex-auto border-primary border-b-2">
                         {
                             combat?.boxers?.map((boxer, boxerI) => {
-                                const combatVote = votes[combatI]
+                                const combatVote = votes[combat.id - 1]
                                 const isVoted = combatVote?.includes(boxer.boxerName)
                                 return (
                                     <li class={
                                         `${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} 
                                         w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-hidden`}>
                                         <button 
-                                            class="w-full h-full" 
-                                            onClick={() => handleVote({ combatId: combatI, boxerName: boxer.boxerName })}>
+                                            class="w-full h-full"
+                                            onClick={() => handleVote({ combatId: combat.id - 1, boxerName: boxer.boxerName })}>
                                                 <img 
                                                     src={combat.boxers[boxerI].image} 
+                                                    alt={boxer.boxerName}
                                                     class={`${isVoted ? 'opacity-100 scale-110' : 'opacity-70'} ${!isVoted && combatVote.length > 0 ? 'opacity-20' : 'hover:scale-110 hover:opacity-100'} transition-all ease-in-out duration-500 rounded w-full h-full pt-8`}/>
                                         </button>
                                     </li>

@@ -1,6 +1,7 @@
 [
   {
-    "id": "1",
+    "id": 1,
+    "title": "Primer combate",
     "combatName": "Carrera VS Agustin",
     "boxers": [
       {
@@ -16,7 +17,8 @@
     ]
   },
   {
-    "id": "2",
+    "id": 2,
+    "title": "Segundo combate",
     "combatName": "Guanyar VS La Cobra",
     "boxers": [
       {
@@ -32,7 +34,8 @@
     ]
   },
   {
-    "id": "3",
+    "id": 3,
+    "title": "Tercer combate",
     "combatName": "Zeling y Nissaxter VS Alana y Ama Blitz",
     "boxers": [
       {
@@ -48,7 +51,8 @@
     ]
   },
   {
-    "id": "4",
+    "id": 4,
+    "title": "Cuarto combate",
     "combatName": "Viruzz VS Shelao",
     "boxers": [
       {
@@ -64,74 +68,76 @@
     ]
   },
   {
-    "id": "5",
-    "combatName": "Yo soy Plex VS El Mariana",
-    "boxers": [
-      {
-        "id": "5-1",
-        "boxerName": "Yo soy Plex",
-        "image": "/plex-bg.webp"
-      },
-      {
-        "id": "5-2",
-        "boxerName": "El Mariana",
-        "image": "/mariana-bg.webp"
-      }
-    ]
-  },
-  {
-    "id": "6",
+    "id": 5,
+    "title": "Quinto Combate",
     "combatName": "El Rey de la Pista",
     "boxers": [
       {
-        "id": "6-1",
+        "id": "5-1",
         "boxerName": "Roberto Cein",
         "image": ""
       },
       {
-        "id": "6-2",
+        "id": "5-2",
         "boxerName": "Aldo Geo",
         "image": ""
       },
       {
-        "id": "6-3",
+        "id": "5-3",
         "boxerName": "Folagor",
         "image": ""
       },
       {
-        "id": "6-4",
+        "id": "5-4",
         "boxerName": "Karchez",
         "image": ""
       },
       {
-        "id": "6-5",
+        "id": "5-5",
         "boxerName": "Pelicanger",
         "image": ""
       },
       {
-        "id": "6-6",
+        "id": "5-6",
         "boxerName": "Peldaños",
         "image": ""
       },
       {
-        "id": "6-7",
+        "id": "5-7",
         "boxerName": "Unicornio",
         "image": ""
       },
       {
-        "id": "6-8",
+        "id": "5-8",
         "boxerName": "Skain",
         "image": ""
       },
       {
-        "id": "6-9",
+        "id": "5-9",
         "boxerName": "Sezar Blue",
         "image": ""
       },
       {
-        "id": "6-10",
+        "id": "5-10",
         "boxerName": "Will",
         "image": ""
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Main Event",
+    "combatName": "Yo soy Plex VS El Mariana",
+    "boxers": [
+      {
+        "id": "6-1",
+        "boxerName": "Yo soy Plex",
+        "image": "/plex-bg.webp"
+      },
+      {
+        "id": "6-2",
+        "boxerName": "El Mariana",
+        "image": "/mariana-bg.webp"
       }
     ]
   }
