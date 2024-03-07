@@ -3,7 +3,7 @@
 </div>
 
 <script>
-	const NUM_PARTICLES = 50 // Número de partículas
+	const NUM_PARTICLES = 30 // Número de partículas
 	const canvas = document.getElementById("smoke-canvas") as HTMLCanvasElement
 	const ctx = canvas.getContext("2d") as CanvasRenderingContext2D
 	let raf: number
@@ -20,7 +20,7 @@
 
 	// Carga la textura de humo
 	const smokeImage = new Image()
-	smokeImage.src = "/smoke.webp" // Asegúrate de que la ruta a la textura sea correcta
+	smokeImage.src = "/smoke_optimized.webp" // Asegúrate de que la ruta a la textura sea correcta
 
 	class Particle {
 		x: number

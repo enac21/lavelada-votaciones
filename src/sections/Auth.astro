@@ -6,10 +6,10 @@ import { getSession } from 'auth-astro/server';
 const session = await getSession(Astro.request);
 ---
 
-<section class="flex flex-col place-items-center gap-y-5 border-b-2 border-primary text-primary">
+<section class="flex flex-col mt-2 pb-2 place-items-center gap-y-5 border-b-2 border-primary text-primary animate-fade-in animate-duration-500">
     { 	session && (
             <span
-                class="bg-primary px-3 py-0.5 text-base font-bold uppercase text-secondary md:px-6 md:py-1 lg:text-xl"
+                class="bg-primary px-3 text-base font-bold uppercase text-secondary md:px-6 md:py-1 lg:text-xl"
                 aria-hidden="true"
             >Bienvenido {session.user?.name}
             </span>
@@ -55,7 +55,6 @@ const session = await getSession(Astro.request);
         transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 300ms;
-        margin-bottom: 1.25rem;
     }
 
     button:hover {

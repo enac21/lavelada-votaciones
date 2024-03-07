@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Primer combate",
-    "combatName": "Carrera VS Agustin",
+    "combatTitle": "Carrera VS Agustin",
     "boxers": [
       {
         "id": "1-1",
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "title": "Segundo combate",
-    "combatName": "Guanyar VS La Cobra",
+    "combatTitle": "Guanyar VS La Cobra",
     "boxers": [
       {
         "id": "2-1",
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "title": "Tercer combate",
-    "combatName": "Zeling y Nissaxter VS Alana y Ama Blitz",
+    "combatTitle": "Zeling y Nissaxter VS Alana y Ama Blitz",
     "boxers": [
       {
         "id": "3-1",
@@ -53,7 +53,7 @@
   {
     "id": 4,
     "title": "Cuarto combate",
-    "combatName": "Viruzz VS Shelao",
+    "combatTitle": "Viruzz VS Shelao",
     "boxers": [
       {
         "id": "4-1",
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "title": "Quinto Combate",
-    "combatName": "El Rey de la Pista",
+    "combatTitle": "El Rey de la Pista",
     "boxers": [
       {
         "id": "5-1",
@@ -127,7 +127,7 @@
   {
     "id": 6,
     "title": "Main Event",
-    "combatName": "Yo soy Plex VS El Mariana",
+    "combatTitle": "Yo soy Plex VS El Mariana",
     "boxers": [
       {
         "id": "6-1",

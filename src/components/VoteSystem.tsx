@@ -5,7 +5,7 @@ import CombatsInfo from "@/data/combates.json"
 interface CombatInfo {
     id: number,
     title: string,
-    combatName: string,
+    combatTitle: string,
     boxers: Boxer[]
 }
 
@@ -41,11 +41,20 @@ export function VoteSystem () {
 
     return (
         combatInfo?.map((combat) => {
+            const boxersLenght = combat.boxers.length
+            
+            let combatTitle = combat.combatTitle
+            if(boxersLenght == 2) {
+                combatTitle = `${combat.boxers[0].boxerName} 
+                VS 
+                ${combat.boxers[1].boxerName}`
+            }
+
             return (
                 <section class="animate-fade-in animate-delay-[1s]">
                     <div class="flex justify-center">
-                        <h2 class="text-center font-medium text-primary font-atomic text-6xl uppercase border-primary mt-10">
-                            {combat.combatName}
+                        <h2 class="text-center font-medium text-primary font-atomic text-6xl uppercase border-primary mt-10 whitespace-pre-line">
+                            {combatTitle}
                         </h2>
                     </div>
                     <ul class="flex flex-auto border-primary border-b-2">

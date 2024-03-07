@@ -6,6 +6,9 @@ import Hero from '@/sections/Hero.astro';
 import Footer from '@/sections/Footer.astro';
 import Countdown from '@/sections/Countdown.astro';
 import Auth from '@/sections/Auth.astro';
+
+import { getSession } from 'auth-astro/server';
+const session = await getSession(Astro.request);
 ---
 
 <Layout title="La Velada IV - Apuestas">
@@ -13,7 +16,10 @@ import Auth from '@/sections/Auth.astro';
 	<main class="animate-fade-in animate-duration-1000">
 		<Countdown/>
 		<Auth/>
-		<Vote/>
+		{ 	session && (
+				<Vote/>
+			)
+		}
 	</main>
 	<Footer>
 </Layout>
