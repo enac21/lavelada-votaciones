@@ -24,7 +24,7 @@
     "preact": "^10.19.6",
     "tailwindcss": "^3.4.1",
     "three": "^0.162.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",

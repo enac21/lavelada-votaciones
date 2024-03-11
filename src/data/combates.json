@@ -7,12 +7,16 @@
       {
         "id": "1-1",
         "boxerName": "Carrera",
-        "image": "/carrera-bg.webp"
+        "image": "/carrera-bg.webp",
+        "height": "175",
+        "weight": "70"
       },
       {
         "id": "1-2",
         "boxerName": "Agustin",
-        "image": "/agus-bg.webp"
+        "image": "/agus-bg.webp",
+        "height": "180",
+        "weight": "75"
       }
     ]
   },
@@ -24,12 +28,16 @@
       {
         "id": "2-1",
         "boxerName": "Guanyar",
-        "image": "/guanyar-bg.webp"
+        "image": "/guanyar-bg.webp",
+        "height": "185",
+        "weight": "80"
       },
       {
         "id": "2-2",
         "boxerName": "La Cobra",
-        "image": "/cobra-bg.webp"
+        "image": "/cobra-bg.webp",
+        "height": "170",
+        "weight": "65"
       }
     ]
   },
@@ -41,12 +49,16 @@
       {
         "id": "3-1",
         "boxerName": "Zeling y Nissaxter",
-        "image": "/nissaxter-zelin-bg.webp"
+        "image": "/nissaxter-zelin-bg.webp",
+        "height": "178",
+        "weight": "72"
       },
       {
         "id": "3-2",
         "boxerName": "Alana y Ama Blitz",
-        "image": "/alana-ama_blitz-bg.webp"
+        "image": "/alana-ama_blitz-bg.webp",
+        "height": "172",
+        "weight": "68"
       }
     ]
   },
@@ -58,12 +70,16 @@
       {
         "id": "4-1",
         "boxerName": "Viruzz",
-        "image": "/viruzz-bg.webp"
+        "image": "/viruzz-bg.webp",
+        "height": "183",
+        "weight": "78"
       },
       {
         "id": "4-2",
         "boxerName": "Shelao",
-        "image": "/shelao-bg.webp"
+        "image": "/shelao-bg.webp",
+        "height": "176",
+        "weight": "73"
       }
     ]
   },
@@ -75,52 +91,72 @@
       {
         "id": "5-1",
         "boxerName": "Roberto Cein",
-        "image": ""
+        "image": "",
+        "height": "179",
+        "weight": "75"
       },
       {
         "id": "5-2",
         "boxerName": "Aldo Geo",
-        "image": ""
+        "image": "",
+        "height": "182",
+        "weight": "80"
       },
       {
         "id": "5-3",
         "boxerName": "Folagor",
-        "image": ""
+        "image": "",
+        "height": "177",
+        "weight": "72"
       },
       {
         "id": "5-4",
         "boxerName": "Karchez",
-        "image": ""
+        "image": "",
+        "height": "185",
+        "weight": "78"
       },
       {
         "id": "5-5",
         "boxerName": "Pelicanger",
-        "image": ""
+        "image": "",
+        "height": "173",
+        "weight": "68"
       },
       {
         "id": "5-6",
         "boxerName": "Peldaños",
-        "image": ""
+        "image": "",
+        "height": "176",
+        "weight": "73"
       },
       {
         "id": "5-7",
         "boxerName": "Unicornio",
-        "image": ""
+        "image": "",
+        "height": "180",
+        "weight": "76"
       },
       {
         "id": "5-8",
         "boxerName": "Skain",
-        "image": ""
+        "image": "",
+        "height": "174",
+        "weight": "70"
       },
       {
         "id": "5-9",
         "boxerName": "Sezar Blue",
-        "image": ""
+        "image": "",
+        "height": "181",
+        "weight": "77"
       },
       {
         "id": "5-10",
         "boxerName": "Will",
-        "image": ""
+        "image": "",
+        "height": "178",
+        "weight": "74"
       }
     ]
   },
@@ -132,12 +168,16 @@
       {
         "id": "6-1",
         "boxerName": "Yo soy Plex",
-        "image": "/plex-big.webp"
+        "image": "/plex-big.webp",
+        "height": "180",
+        "weight": "85"
       },
       {
         "id": "6-2",
         "boxerName": "El Mariana",
-        "image": "/el-mariana-big.webp"
+        "image": "/el-mariana-big.webp",
+        "height": "178",
+        "weight": "80"
       }
     ]
   }
