@@ -45,8 +45,8 @@ export function VoteSystem () {
             
             let combatTitle = combat.combatTitle
             if(boxersLenght == 2) {
-                combatTitle = `${combat.boxers[0].boxerName} 
-                VS 
+                combatTitle = `${combat.boxers[0].boxerName}
+                VS
                 ${combat.boxers[1].boxerName}`
             }
 
@@ -63,12 +63,9 @@ export function VoteSystem () {
                                 const combatVote = votes[combat.id - 1]
                                 const isVoted = combatVote?.includes(boxer.boxerName)
                                 return (
-                                    <li class={
-                                        `${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} 
-                                        w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-hidden`}>
+                                    <li class={`${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-hidden`}>
                                         <button 
-                                            class="w-full h-full"
-                                            onClick={() => handleVote({ combatId: combat.id - 1, boxerName: boxer.boxerName })}>
+                                            class="w-full h-full" onClick={() => handleVote({ combatId: combat.id - 1, boxerName: boxer.boxerName })}>
                                                 <img 
                                                     src={combat.boxers[boxerI].image} 
                                                     alt={boxer.boxerName}

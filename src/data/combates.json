@@ -132,12 +132,12 @@
       {
         "id": "6-1",
         "boxerName": "Yo soy Plex",
-        "image": "/plex-bg.webp"
+        "image": "/plex-big.webp"
       },
       {
         "id": "6-2",
         "boxerName": "El Mariana",
-        "image": "/mariana-bg.webp"
+        "image": "/el-mariana-big.webp"
       }
     ]
   }
