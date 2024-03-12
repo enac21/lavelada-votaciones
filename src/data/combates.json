@@ -5,14 +5,14 @@
     "combatTitle": "Carrera VS Agustin",
     "boxers": [
       {
-        "id": "1-1",
+        "id": "1",
         "boxerName": "Carrera",
         "image": "/carrera-bg.webp",
         "height": "175",
         "weight": "70"
       },
       {
-        "id": "1-2",
+        "id": "2",
         "boxerName": "Agustin",
         "image": "/agus-bg.webp",
         "height": "180",
@@ -26,14 +26,14 @@
     "combatTitle": "Guanyar VS La Cobra",
     "boxers": [
       {
-        "id": "2-1",
+        "id": "1",
         "boxerName": "Guanyar",
         "image": "/guanyar-bg.webp",
         "height": "185",
         "weight": "80"
       },
       {
-        "id": "2-2",
+        "id": "2",
         "boxerName": "La Cobra",
         "image": "/cobra-bg.webp",
         "height": "170",
@@ -47,14 +47,14 @@
     "combatTitle": "Zeling y Nissaxter VS Alana y Ama Blitz",
     "boxers": [
       {
-        "id": "3-1",
+        "id": "1",
         "boxerName": "Zeling y Nissaxter",
         "image": "/nissaxter-zelin-bg.webp",
         "height": "178",
         "weight": "72"
       },
       {
-        "id": "3-2",
+        "id": "2",
         "boxerName": "Alana y Ama Blitz",
         "image": "/alana-ama_blitz-bg.webp",
         "height": "172",
@@ -68,14 +68,14 @@
     "combatTitle": "Viruzz VS Shelao",
     "boxers": [
       {
-        "id": "4-1",
+        "id": "1",
         "boxerName": "Viruzz",
         "image": "/viruzz-bg.webp",
         "height": "183",
         "weight": "78"
       },
       {
-        "id": "4-2",
+        "id": "2",
         "boxerName": "Shelao",
         "image": "/shelao-bg.webp",
         "height": "176",
@@ -89,70 +89,70 @@
     "combatTitle": "El Rey de la Pista",
     "boxers": [
       {
-        "id": "5-1",
+        "id": "1",
         "boxerName": "Roberto Cein",
         "image": "",
         "height": "179",
         "weight": "75"
       },
       {
-        "id": "5-2",
+        "id": "2",
         "boxerName": "Aldo Geo",
         "image": "",
         "height": "182",
         "weight": "80"
       },
       {
-        "id": "5-3",
+        "id": "3",
         "boxerName": "Folagor",
         "image": "",
         "height": "177",
         "weight": "72"
       },
       {
-        "id": "5-4",
+        "id": "4",
         "boxerName": "Karchez",
         "image": "",
         "height": "185",
         "weight": "78"
       },
       {
-        "id": "5-5",
+        "id": "5",
         "boxerName": "Pelicanger",
         "image": "",
         "height": "173",
         "weight": "68"
       },
       {
-        "id": "5-6",
+        "id": "6",
         "boxerName": "Peldaños",
         "image": "",
         "height": "176",
         "weight": "73"
       },
       {
-        "id": "5-7",
+        "id": "7",
         "boxerName": "Unicornio",
         "image": "",
         "height": "180",
         "weight": "76"
       },
       {
-        "id": "5-8",
+        "id": "8",
         "boxerName": "Skain",
         "image": "",
         "height": "174",
         "weight": "70"
       },
       {
-        "id": "5-9",
+        "id": "9",
         "boxerName": "Sezar Blue",
         "image": "",
         "height": "181",
         "weight": "77"
       },
       {
-        "id": "5-10",
+        "id": "10",
         "boxerName": "Will",
         "image": "",
         "height": "178",
@@ -166,14 +166,14 @@
     "combatTitle": "Yo soy Plex VS El Mariana",
     "boxers": [
       {
-        "id": "6-1",
+        "id": "1",
         "boxerName": "Yo soy Plex",
         "image": "/plex-big.webp",
         "height": "180",
         "weight": "85"
       },
       {
-        "id": "6-2",
+        "id": "2",
         "boxerName": "El Mariana",
         "image": "/el-mariana-big.webp",
         "height": "178",

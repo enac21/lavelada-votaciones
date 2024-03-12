@@ -45,6 +45,7 @@ const session = await getSession(Astro.request);
 
     logoutButton?.addEventListener("click", async (event) => {
         event.preventDefault()
+        localStorage.removeItem("votes")
         await signOut()
     })
   
