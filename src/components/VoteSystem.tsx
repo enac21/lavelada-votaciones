@@ -49,7 +49,7 @@ export function VoteSystem () {
     if (alreadyVoted && storageVotes != undefined) {
         return (
             //TODO - Extract this to a component
-            <section class="animate-fade-in animate-duration-500 m-5 text-center text-primary">
+            <section class="m-5 text-center text-primary animate-fade-in animate-delay-[0,5s]">
                 <p class="uppercase text-3xl">Ya has realizado tus votos</p>
                 <div class="flex justify-center items-center mb-5">
                     <div class="grid grid-cols-3 gap-4">
@@ -58,7 +58,7 @@ export function VoteSystem () {
                                 const boxerIndex = parseInt(votedBoxer)-1
                                 return (
                                     <div class="text-center">
-                                    <img src={combatInfo[i].boxers[boxerIndex].image} alt={combatInfo[i].boxers[boxerIndex].boxerName} class="w-24 h-24 rounded-full mx-auto mb-2"/>
+                                    <img src={combatInfo[i].boxers[boxerIndex].image_sml} alt={combatInfo[i].boxers[boxerIndex].boxerName} class="w-24 h-24 rounded-full mx-auto mb-2"/>
                                     <p class="text-sm font-medium">{combatInfo[i].boxers[boxerIndex].boxerName}</p>
                                 </div>
                                 )
@@ -80,7 +80,7 @@ export function VoteSystem () {
     }
   
     return (
-        <section class="animate-fade-in animate-delay-[1s]">
+        <section class="animate-fade-in animate-delay-[0,5s]">
             {
                 combatInfo?.map((combat, i) => {
                     const boxersLenght = combat.boxers.length
@@ -105,10 +105,10 @@ export function VoteSystem () {
                                         const combatVote = parseInt(votes[combat.id - 1])
                                         const isVoted = combatVote === parseInt(boxer.id)
                                         return (
-                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-hidden relative text-3xl md:w-1/2`}>
+                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip relative text-3xl md:w-1/2`}>
                                                 <button class="w-full h-full" onClick={() => handleVote({ combatId: combat.id - 1, boxerId: boxer.id })}>
                                                         <img 
-                                                            src={combat.boxers[boxerI].image} 
+                                                            src={combat.boxers[boxerI].image}
                                                             class={`${isVoted ? 'opacity-100 scale-110' : 'opacity-70'} ${!isVoted && combatVote >= 0 ? 'opacity-20' : 'hover:scale-110 hover:opacity-100'} transition-all ease-in-out duration-500 rounded w-full h-full pt-8`}
                                                         />
                                                 </button>
