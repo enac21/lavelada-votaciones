@@ -3,16 +3,18 @@
 
 Web para votar a tu boxeador favorito de cada combate de la Velada IV siguiendo el diseño de la landing page de [@midudev](https://github.com/midudev)
 
-
-![logo](https://github.com/enac21/enac21/assets/96846797/6e44290e-383d-4a57-a030-f93fa51dfa01)
+![logo](https://github.com/enac21/lavelada-votaciones/assets/96846797/0c4cc2ac-04c9-4a81-af56-7ac543a2c380)
 
 
 ## Caracteristicas
 
 * [x] Modo claro/oscuro.
-* [ ] Login con Discord.
+* [x] Login con Discord.
 * [ ]  Sistema de votos.
 
+## Web
+
+![combat-vote-section](https://github.com/enac21/lavelada-votaciones/assets/96846797/4280b1f4-1645-4a56-9550-98a94a0e5da4)
 
 ## Autores
 
