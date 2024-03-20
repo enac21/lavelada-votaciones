@@ -105,7 +105,7 @@ export function VoteSystem () {
                                         const combatVote = parseInt(votes[combat.id - 1])
                                         const isVoted = combatVote === parseInt(boxer.id)
                                         return (
-                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip text-3xl md:w-1/2 relative`}>
+                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-primary' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip text-3xl md:w-1/2 relative`}>
                                                 <button class="w-full h-full" onClick={() => handleVote({ combatId: combat.id - 1, boxerId: boxer.id })}>
                                                         <img 
                                                             src={combat.boxers[boxerI].image}
@@ -114,7 +114,6 @@ export function VoteSystem () {
                                                         />
                                                 </button>
                                                 <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-7 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
-
                                                     Altura: {boxer.height} cm
                                                 </span>
                                                 <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-0 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
@@ -130,7 +129,7 @@ export function VoteSystem () {
                 })
             }
             {
-                <div class="send-button flex justify-center border-primary border-b-2">
+                <div class="send-button flex justify-center">
                     <button onClick={() => sendVotes(votes)} 
                         class={`${allVoted ? 'transition hover:scale-125' : 'opacity-50 cursor-not-allowed'} text-center font-medium text-primary font-atomic text-6xl uppercase m-10`} 
                         disabled={!allVoted}>
