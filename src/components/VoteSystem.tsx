@@ -105,14 +105,16 @@ export function VoteSystem () {
                                         const combatVote = parseInt(votes[combat.id - 1])
                                         const isVoted = combatVote === parseInt(boxer.id)
                                         return (
-                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-lime-400' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip relative text-3xl md:w-1/2`}>
+                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-primary' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip text-3xl md:w-1/2`}>
                                                 <button class="w-full h-full" onClick={() => handleVote({ combatId: combat.id - 1, boxerId: boxer.id })}>
                                                         <img 
                                                             src={combat.boxers[boxerI].image}
-                                                            class={`${isVoted ? 'opacity-100 scale-110' : 'opacity-70'} ${!isVoted && combatVote >= 0 ? 'opacity-20' : 'hover:scale-110 hover:opacity-100'} transition-all ease-in-out duration-500 rounded w-full h-full pt-8`}
+                                                            class={`${isVoted ? 'opacity-100 scale-110' : 'opacity-80'} ${!isVoted && combatVote >= 0 ? '' : 'hover:scale-110 hover:opacity-100'} transition-all ease-in-out duration-500 rounded w-full h-full pt-8`}
+                                                            style="mask-image: linear-gradient(black 90%, transparent 99%);"
                                                         />
                                                 </button>
                                                 <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-7 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
+
                                                     Altura: {boxer.height} cm
                                                 </span>
                                                 <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-0 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
