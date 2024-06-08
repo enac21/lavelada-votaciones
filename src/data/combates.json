@@ -9,6 +9,7 @@
         "boxerName": "Carrera",
         "image": "/boxers/carreraaa.webp",
         "image_sml": "/boxers/avatares/carreraaa-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134617286410422/carreraaa.webp?ex=666632c4&is=6664e144&hm=7dad823f66e1e152391e79cb04d217971611666539984045c028182c1363f64e&",
         "height": "175",
         "weight": "70"
       },
@@ -17,6 +18,7 @@
         "boxerName": "Agustin",
         "image": "/boxers/agustin-51.webp",
         "image_sml": "/boxers/avatares/agustin-51-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249087144098664551/agustin-51.webp?ex=6666068e&is=6664b50e&hm=285c84099ab26d916f19e4ce6e0d05babc8000b5855452f169d0b9061cc9c6ae&",
         "height": "180",
         "weight": "75"
       }
@@ -32,6 +34,7 @@
         "boxerName": "Guanyar",
         "image": "/boxers/guanyar.webp",
         "image_sml": "/boxers/avatares/guanyar-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134702166675517/guanyar.webp?ex=666632d8&is=6664e158&hm=16af4720905d1e1c8de41fc2b31543b40e772b70bba60526785721aae3c6355c&",
         "height": "185",
         "weight": "80"
       },
@@ -40,6 +43,7 @@
         "boxerName": "La Cobra",
         "image": "/boxers/la-cobra.webp",
         "image_sml": "/boxers/avatares/la-cobra-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134787365437460/la-cobra.webp?ex=666632ed&is=6664e16d&hm=22245d6e0d9facd333281876e0c378cef6437176bb3f7bf9bf721ad10e8b79a3&",
         "height": "170",
         "weight": "65"
       }
@@ -55,6 +59,7 @@
         "boxerName": "Zeling y Nissaxter",
         "image": "/boxers/nissaxter-zelin.webp",
         "image_sml": "/boxers/avatares/nissaxter-zelin-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134842914934784/nissaxter-zelin.webp?ex=666632fa&is=6664e17a&hm=f53c321012bfecc99e0c314aa207cead6cea6ed9e9b68cc8b83f8de08218d7cb&",
         "height": "178",
         "weight": "72"
       },
@@ -63,6 +68,7 @@
         "boxerName": "Alana y Ama Blitz",
         "image": "/boxers/alana-ama_blitz.webp",
         "image_sml": "/boxers/avatares/alana-ama_blitz-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134896375664650/alana-ama_blitz.webp?ex=66663307&is=6664e187&hm=84f7d4048a540eb5f46302e91c399a13c21beb72420c8155b33ffdceeb23ce73&",
         "height": "172",
         "weight": "68"
       }
@@ -78,6 +84,7 @@
         "boxerName": "Shelao",
         "image": "/boxers/shelao.webp",
         "image_sml": "/boxers/avatares/shelao-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134964130320535/shelao.webp?ex=66663317&is=6664e197&hm=377a1c3c7e858d56d85e811a8ee3a35075f7cef195ebc702c46158eb6370f5b2&",
         "height": "176",
         "weight": "73"
       },
@@ -86,6 +93,7 @@
         "boxerName": "Viruzz",
         "image": "/boxers/viruzz.webp",
         "image_sml": "/boxers/avatares/viruzz-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249134981142413433/viruzz.webp?ex=6666331b&is=6664e19b&hm=b32fbf8f6c08c9b61ff620e826c3b370e3c8a917a47359ec03116225f965e800&",
         "height": "183",
         "weight": "78"
       }
@@ -101,6 +109,7 @@
         "boxerName": "Roberto Cein",
         "image": "/boxers/avatares/roberto-cein-small.webp",
         "image_sml": "/boxers/avatares/roberto-cein-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135069977776258/roberto-cein-small.webp?ex=66663330&is=6664e1b0&hm=b2fb1cecd4cfdc478e2f49dbfedbd0a11bb561b2af6fcc47c906179b54fb966c&",
         "height": "179",
         "weight": "75"
       },
@@ -109,6 +118,7 @@
         "boxerName": "Aldo Geo",
         "image": "/boxers/avatares/aldo-geo-small.webp",
         "image_sml": "/boxers/avatares/aldo-geo-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135185945956362/aldo-geo-small.webp?ex=6666334c&is=6664e1cc&hm=74a441672653b8f11d442a2542bfaf121156b8730a5904cb2c2ec07cf69e4795&",
         "height": "182",
         "weight": "80"
       },
@@ -117,6 +127,7 @@
         "boxerName": "Folagor",
         "image": "/boxers/avatares/folagor-small.webp",
         "image_sml": "/boxers/avatares/folagor-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135209996353617/folagor-small.webp?ex=66663351&is=6664e1d1&hm=b420457b1f53736f0918cdc64fe51299ec6484e276d7a2defd85e030e3f38c24&",
         "height": "177",
         "weight": "72"
       },
@@ -125,6 +136,7 @@
         "boxerName": "Karchez",
         "image": "/boxers/avatares/karchez-small.webp",
         "image_sml": "/boxers/avatares/karchez-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135303881396287/karchez-small.webp?ex=66663368&is=6664e1e8&hm=06c19681d7c85542092204492c3f3f1319d9404efd7fb507a239ce8cf48c96cf&",
         "height": "185",
         "weight": "78"
       },
@@ -133,6 +145,7 @@
         "boxerName": "Pelicanger",
         "image": "/boxers/avatares/pelicanger-small.webp",
         "image_sml": "/boxers/avatares/pelicanger-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135322856689810/pelicanger-small.webp?ex=6666336c&is=6664e1ec&hm=e1b58d01ca177bf64c8b7c111e3d0df3b0e5128ffb58f366d555b9370c69c4fe&",
         "height": "173",
         "weight": "68"
       },
@@ -141,6 +154,7 @@
         "boxerName": "Peldaños",
         "image": "/boxers/avatares/peldanyos-small.webp",
         "image_sml": "/boxers/avatares/peldanyos-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135426468319373/peldanyos-small.webp?ex=66663385&is=6664e205&hm=3e0b02fe91f1d754274902e43c893cee462b3a78c28352d1e3eeff41bebb6b1f&",
         "height": "176",
         "weight": "73"
       },
@@ -149,6 +163,7 @@
         "boxerName": "Unicornio",
         "image": "/boxers/avatares/unicornio-small.webp",
         "image_sml": "/boxers/avatares/unicornio-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135438539653191/unicornio-small.webp?ex=66663388&is=6664e208&hm=bcb8000d24150a992c28c3bfa212ee977213c952a80c522b848f6b4636716234&",
         "height": "180",
         "weight": "76"
       },
@@ -157,6 +172,7 @@
         "boxerName": "Skain",
         "image": "/boxers/avatares/skain-small.webp",
         "image_sml": "/boxers/avatares/skain-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135514993561600/skain-small.webp?ex=6666339a&is=6664e21a&hm=3c12f9a8ba93a88605585a0f472166f5adb1356e7d841801fa64b440c3308879&",
         "height": "174",
         "weight": "70"
       },
@@ -165,6 +181,7 @@
         "boxerName": "Sezar Blue",
         "image": "/boxers/avatares/sezar-blue-small.webp",
         "image_sml": "/boxers/avatares/sezar-blue-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135528205484193/sezar-blue-small.webp?ex=6666339d&is=6664e21d&hm=f3051b5b02f4dbc09c6d037c96cef944d37f4b552a2587c72f907cd984d12ef7&",
         "height": "181",
         "weight": "77"
       },
@@ -173,6 +190,7 @@
         "boxerName": "Will",
         "image": "/boxers/avatares/will-small.webp",
         "image_sml": "/boxers/avatares/will-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135541413351464/will-small.webp?ex=666633a0&is=6664e220&hm=c45ae8c9869b30ca7782755954719ca9c90286307cd541743a43b71ab7b5ec01&",
         "height": "178",
         "weight": "74"
       }
@@ -188,6 +206,7 @@
         "boxerName": "Yo soy Plex",
         "image": "/boxers/plex.webp",
         "image_sml": "/boxers/avatares/plex-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135651115368488/plex.webp?ex=666633bb&is=6664e23b&hm=d4acca9fef0f16e00a1ab5a3003a3d5d2d8ba53bc67811a9d98b6734af625745&",
         "height": "180",
         "weight": "85"
       },
@@ -196,6 +215,7 @@
         "boxerName": "El Mariana",
         "image": "/boxers/el-mariana.webp",
         "image_sml": "/boxers/avatares/el-mariana-small.webp",
+        "discord_img": "https://cdn.discordapp.com/attachments/694693308936749117/1249135671168208906/el-mariana.webp?ex=666633bf&is=6664e23f&hm=929354569f5b8bd62875cc34a34e2e714e59a5fb2805e467eef00fee8c02865f&",
         "height": "178",
         "weight": "80"
       }

@@ -2,9 +2,13 @@ import { useState, useEffect } from "preact/hooks"
 
 import CombatsInfo from "@/data/combates.json"
 
+type Props = {
+    userName: string;
+};
+
 type Votes = Array<string>
 
-export function VoteSystem () {
+export function VoteSystem (props: Props) {
     const combatInfo = CombatsInfo
     
     const [votes, setVotes] = useState<Votes>(Array.from({ length: combatInfo.length }))
@@ -39,9 +43,92 @@ export function VoteSystem () {
     const sendVotes = (
         votes: Votes 
     ) => {
-        //TODO Save votes in DB - UserName + BoxerId ordered by combatId (index)
         const votesJSON = JSON.stringify(votes);
         localStorage.setItem('votes', votesJSON);
+
+        const body = `{
+            "content": "${props.userName} ha realizado sus votaciones para la velada. Tu tambien puedes votar en https://lavelada-votaciones.vercel.app/",
+            "embeds": [
+                {
+                    "title": "<------------------- VOTOS ------------------->",
+                    "color": 5814783
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[0].boxers[parseInt(votes[0]) - 1].boxerName}",
+                    "color": 5814783,
+                    "author": {
+                        "name": "${combatInfo[0].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[0].boxers[parseInt(votes[0]) - 1].discord_img}"
+                    }
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[1].boxers[parseInt(votes[1]) - 1].boxerName}",
+                    "color": 5814783,
+                    "author": {
+                        "name": "${combatInfo[1].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[1].boxers[parseInt(votes[1]) - 1].discord_img}"
+                    }
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[2].boxers[parseInt(votes[2]) - 1].boxerName}",
+                    "color": 5814783,
+                    "author": {
+                        "name": "${combatInfo[2].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[2].boxers[parseInt(votes[2]) - 1].discord_img}"
+                    }
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[3].boxers[parseInt(votes[3]) - 1].boxerName}",
+                    "color": 5814783,
+                    "author": {
+                        "name": "${combatInfo[3].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[3].boxers[parseInt(votes[3]) - 1].discord_img}"
+                    }
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[4].boxers[parseInt(votes[4]) - 1].boxerName}",
+                    "color": 5814783,
+                    "author": {
+                        "name": "${combatInfo[4].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[4].boxers[parseInt(votes[4]) - 1].discord_img}"
+                    }
+                },
+                {
+                    "title": "Apuesta a que gana ${combatInfo[5].boxers[parseInt(votes[5]) - 1].boxerName}",
+                    "color": 5890060,
+                    "author": {
+                        "name": "${combatInfo[5].combatTitle}"
+                    },
+                    "image": {
+                        "url": "${combatInfo[5].boxers[parseInt(votes[5]) - 1].discord_img}"    
+                    }
+                },
+                {
+                    "title": "<------------------- ${props.userName} ------------------->",
+                    "color": 5814783
+                }
+            ],
+            "username": "Ibai Llanos",
+            "attachments": []
+        }`;
+
+        fetch("https://discord.com/api/webhooks/1249075861546860596/GsjpitHBuCI9Md7O7Y4h5OYTfyVD928gTT6knuzjmeLtFyt0ed8p_Lwj9ynMwE4R_0xs", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: body,
+        })
 
         setAlreadyVoted(true)
     }

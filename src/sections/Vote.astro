@@ -1,7 +1,10 @@
 ---
 import { VoteSystem } from "@/components/VoteSystem.tsx"
+import { getSession } from 'auth-astro/server';
+
+const session = await getSession(Astro.request);
 ---
 
 <section class="flex flex-col place-items-center lg:gap-3 text-primary">
-    <VoteSystem client:visible/>
+    <VoteSystem userName={session?.user?.name || "anonimous"} client:visible></VoteSystem>
 </section>
