@@ -84,6 +84,7 @@ export function VoteSystem () {
             {
                 combatInfo?.map((combat, i) => {
                     const boxersLenght = combat.boxers.length
+                    const isKOH = boxersLenght > 2
                     
                     let combatTitle = combat.combatTitle
                     if(boxersLenght == 2) {
@@ -113,14 +114,15 @@ export function VoteSystem () {
                                                             style="mask-image: linear-gradient(black 90%, transparent 99%);"
                                                         />
                                                 </button>
-                                                <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-7 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
+                                                <span class={`${isKOH ? 'opacity-0' : 'absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-7 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none'}`} aria-hidden="true">
                                                     Altura: {boxer.height} cm
                                                 </span>
-                                                <span class="absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-0 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none" aria-hidden="true">
+                                                <span class={`${isKOH ? 'opacity-0' : 'absolute bg-primary md:mx-40 m-4 text-base font-bold uppercase text-secondary bottom-0 left-0 right-0 z-20 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out pointer-events-none'}`} aria-hidden="true">
                                                     Peso: {boxer.weight} kg
                                                 </span>
                                             </li>
                                         )
+                                        
                                     })
                                 }
                             </ul>
