@@ -10,7 +10,8 @@ Web para votar a tu boxeador favorito de cada combate de la Velada IV siguiendo 
 
 * [x] Modo claro/oscuro.
 * [x] Login con Discord.
-* [ ]  Sistema de votos.
+* [x] Sistema de votos.
+* [x] Envio de votos a discord
 
 ## Web
 
