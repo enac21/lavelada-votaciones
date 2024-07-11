@@ -173,7 +173,7 @@ export function VoteSystem (props: Props) {
                                         const combatVote = parseInt(votes[combat.id - 1])
                                         const isVoted = combatVote === parseInt(boxer.id)
                                         return (
-                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-primary' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip text-3xl md:w-1/2 relative`}>
+                                            <li class={`group ${isVoted ? 'bg-gradient-to-t from-primary' : ''} w-full transition text-center sm:w-1/2 xl:w-1/2 overflow-y-clip md:w-1/2 relative`}>
                                                 <button class="w-full h-full" onClick={() => handleVote({ combatId: combat.id - 1, boxerId: boxer.id })}>
                                                         <img 
                                                             src={combat.boxers[boxerI].image}
