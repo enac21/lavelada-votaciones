@@ -22,7 +22,4 @@ Web para votar a tu boxeador favorito de cada combate de la Velada IV siguiendo 
 - [@enac21](https://www.github.com/enac21)
 
 Abierto a propuestas y mejoras.
-## Demo
-
-[Link](https://lavelada-votaciones.vercel.app/)
 
